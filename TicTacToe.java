@@ -84,7 +84,10 @@ public class TicTacToe
         {
             for(int j=0; j<=2; j++)
             {
-                System.out.printf("|%s", Board[i][j]);
+                if(Board[i][j]==0)
+                    System.out.print("| ");
+                else
+                    System.out.printf("|%s", Board[i][j]);
             }
             System.out.println("|");
             System.out.println("-------");
